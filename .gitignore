@@ -1,0 +1,93 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+*# ============================================================
+# E-Commerce Analytics ML Platform - Git Ignore
+# ============================================================
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating System
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================================================
+# PROJECT-SPECIFIC IGNORES
+# ============================================================
+
+# Large Data Files (don't upload to GitHub)
+data/raw/*.csv
+data/raw/*.xlsx
+data/raw/*.xls
+data/processed/*.csv
+data/processed/*.parquet
+
+# Database Files
+*.db
+*.sqlite
+*.sqlite3
+
+# Model Files (can be large)
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.sav
+
+# Reports (might contain sensitive info)
+reports/*.pdf
+reports/*.docx
+
+# Environment Variables
+.env
+.env.local
+
+# Logs
+*.log
+logs/
+*.tmp
+temp/
+
+# Build
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Temporary files
+installed_packages.txt
+
+# ============================================================
+# KEEP THESE FILES
+# ============================================================
+# README.md ✓
+# requirements.txt ✓
+# SQL files ✓
+# Source code ✓
+# Notebooks (without outputs) ✓
+# ============================================================
