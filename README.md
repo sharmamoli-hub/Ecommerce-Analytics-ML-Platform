@@ -196,30 +196,34 @@ Ecommerce-Analytics-ML-Platform/
 
 ## 🔬 Methodology
 
-<div align="center">
-```mermaid
-graph LR
-    A[Raw Data<br/>540K Records] --> B[Data Cleaning<br/>72% Retained]
-    B --> C[Feature Engineering<br/>30+ Features]
-    C --> D[ML Models<br/>7 Algorithms]
-    D --> E[Best Model<br/>89% Accuracy]
-    E --> F[Dashboard<br/>Deployment]
-    
-    C --> G[Customer Segmentation<br/>K-Means K=4]
-    C --> H[Time Series<br/>Prophet 90-day]
-    C --> I[A/B Testing<br/>Statistical Validation]
-    
-    G --> J[Business Insights<br/>$968K Opportunity]
-    H --> J
-    I --> J
-    E --> J
-    
-    style A fill:#e3f2fd
-    style J fill:#c8e6c9
-    style E fill:#fff9c4
+### Data Science Pipeline
+```
+📊 Raw Data              🧹 Data Cleaning         🔧 Feature Engineering
+   540K Records    →       72% Retained      →       30+ Features
+                                                           |
+                                                           ↓
+🤖 ML Models             ✅ Best Model            📊 Analytics
+   7 Algorithms    →     89% Accuracy      →      $968K Opportunity
+                                                           |
+                                                           ↓
+👥 Segmentation          🔮 Forecasting           🧪 A/B Testing
+   K-Means K=4     +     Prophet 90-day    +    Statistical Tests
+                                                           |
+                                                           ↓
+                         🎨 Interactive Dashboard
+                            Deployment & Insights
 ```
 
-</div>
+### Workflow Steps
+
+1. **Data Collection & Cleaning** → Processed 540K transactions, retained 72%
+2. **Feature Engineering** → Created 30+ business-relevant features
+3. **Model Development** → Trained 7 models, selected Random Forest (89% R²)
+4. **Customer Segmentation** → K-Means clustering identified 4 groups
+5. **Time Series Forecasting** → Prophet model for 90-day projection
+6. **A/B Testing** → Statistical validation of pricing strategies
+7. **Dashboard Deployment** → Interactive Streamlit application
+8. **Business Intelligence** → Quantified $968K opportunity
 
 ---
 
